@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harshith Teja">
+    <meta name="description" content="About the Burger Shop">
+    <title>About The Burger Shop</title>
+    <link rel="icon" href="img/hamburger.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    
+    <header class="header"> <!--represents a container for introductory content or a set of navigational links -->
+        <h1 class="header__h1"> The Burger Shop </h1>
+        <nav class="header__nav"> <!--defines a set of navigation links-->
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a> <!-- takes it back to home page -->
+               </li>
+                <li>
+                    <a href="/#menu">Menu</a> <!-- # means it will be on the same page, / means it goes to home page, /#menu means it takes it back to home page & particularly to that menu sec -->
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+        <figure> <!--It is a element to mark up a photo in the document-->
+            <img src="img/fresh-burgers-with-cold-drink-and-fries-on-the-black-table-1024x683.jpeg" alt="Burger, fries, sausage and a Drink" title="We love Burgers!" width="1024" height="683">
+            <figcaption class="offscreen"> <!--offscreen takes the caption off the screen but it is still available for the screen readers(it won't be viewable it will be readable)-->
+                Burger, fries, sausage and a Drink
+            </figcaption>
+        </figure>
+    </section>
+    
+    <main class="main">
+        <article id="about" class="main__article about">
+            <h2>About The Burger Shop</h2>
+            <p>
+                The Burger Shop
+                was founded in <time datetime="2022">2023</time>. Our shop was built from the <strong>love of Burgers</strong> 🍔🍔🍔 .We hope our shop adds a unique and interesting value to our little town.
+            </p>
+            <aside class="about__trivia">
+                <h3>Burger Trivia</h3>
+                <details>
+                    <summary>When did Burgers first appear in India ??</summary>
+                    <p class="about__trivia-answer">
+                        Food historian Pushpesh Pant say that the Burgers made their first appearance in India during the mid-1960s even before the advent of multinational fast-food chains like McDonald's and Burger King. 
+                        <br>
+                        (Source: <cite><a href="https://www.businesstoday.in/opinion/interviews/story/by-the-time-mcdonalds-came-the-indian-burger-palate-was-made-55426-2015-12-01" target="_blank">Business Today</a></cite>)
+                    </p>
+                </details>
+            </aside>
+        </article>
+    </main>
+
+    <footer class="footer center">
+        <p>
+            <span class="nowrap"> Copyright &copy; <time id="year"></time> </span>  
+            <span class="nowrap"> The Burger Shop </span>
+        </p>
+    </footer>
+
+</body>
+</html>
